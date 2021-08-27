@@ -4,7 +4,7 @@ from random import randint
 from sys import argv
 filetype = str(sys.argv[0]).split('.')[0]
 if filetype == 'py':
-    scorefile = 'score'
+    scorefile = 'srcscore'
 elif filetype == 'exe':
     scorefile = 'score\\score'
 highscore = int(open('score', 'r').read())

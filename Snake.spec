@@ -4,10 +4,10 @@
 block_cipher = None
 
 
-a = Analysis(['main.py'],
+a = Analysis(['D:/New folder/Game/venv/game/main.py'],
              pathex=['D:\\New folder\\Game\\venv\\game'],
              binaries=[],
-             datas=[('score.dat', 'score.dat')],
+             datas=[('D:/New folder/Game/venv/game/score.dat', '.'), ('D:/New folder/Game/venv/Lib/site-packages/panda3d', 'panda3d/'), ('D:/New folder/Game/venv/Lib/site-packages/panda3d-1.10.9.dist-info', 'panda3d-1.10.9.dist-info/'), ('D:/New folder/Game/venv/Lib/site-packages/panda3d_tools', 'panda3d_tools/'), ('D:/New folder/Game/venv/Lib/site-packages/ursina', 'ursina/'), ('D:/New folder/Game/venv/Lib/site-packages/ursina-4.0.0-py3.9.egg-info', 'ursina-4.0.0-py3.9.egg-info/')],
              hiddenimports=[],
              hookspath=[],
              hooksconfig={},
@@ -16,10 +16,10 @@ a = Analysis(['main.py'],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
              cipher=block_cipher,
-             noarchive=False)
+             noarchive=True)
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
-splash = Splash('splash.png',
+splash = Splash('D:/New Folder/Game/venv/game/splash.png',
                 binaries=a.binaries,
                 datas=a.datas,
                 text_pos=None,
@@ -27,26 +27,22 @@ splash = Splash('splash.png',
                 minify_script=True)
 
 exe = EXE(pyz,
-          a.scripts, 
-          splash,
-          [],
-          exclude_binaries=True,
+          a.scripts,
+          a.binaries,
+          a.zipfiles,
+          a.datas, 
+          splash, 
+          splash.binaries,
+          [('v', None, 'OPTION')],
           name='Snake',
-          debug=False,
+          debug=True,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
+          upx_exclude=[],
+          runtime_tmpdir=None,
           console=True,
           disable_windowed_traceback=False,
           target_arch=None,
           codesign_identity=None,
-          entitlements_file=None , icon='icon.ico')
-coll = COLLECT(exe,
-               a.binaries,
-               a.zipfiles,
-               a.datas, 
-               splash.binaries,
-               strip=False,
-               upx=True,
-               upx_exclude=[],
-               name='Snake')
+          entitlements_file=None , icon='D:\\New folder\\Game\\venv\\game\\icon.ico')

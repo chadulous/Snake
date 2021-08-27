@@ -2,13 +2,7 @@ from ursina import *
 from time import sleep as wait
 from random import randint
 from sys import argv
-filetype = str(sys.argv[0]).split('.')[1]
-print(filetype)
-if filetype == 'py':
-    scorefile = 'score.dat'
-elif filetype == 'exe':
-    scorefile = 'score.dat\\score.dat'
-highscore = int(open(scorefile, 'r').read())
+highscore = int(open('score.dat', 'r').read())
 class Player(Entity):
     def __init__(self, pfield):
         super().__init__()

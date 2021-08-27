@@ -1,4 +1,4 @@
-('D:\\New folder\\Game\\venv\\game\\splash.png',
+('D:\\New Folder\\Game\\venv\\game\\splash.png',
  'D:\\New folder\\Game\\venv\\game\\build\\Snake\\Splash-00.res',
  'D:\\New folder\\Game\\venv\\game\\build\\Snake\\Splash-00_script.tcl',
  None,

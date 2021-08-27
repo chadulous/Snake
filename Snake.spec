@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['D:/New folder/Game/venv/game/main.py'],
-             pathex=['D:\\New folder\\Game\\venv\\game'],
+             pathex=['D:/New folder/Game/venv/Lib/site-packages', 'D:\\New folder\\Game\\venv\\game'],
              binaries=[],
              datas=[('D:/New folder/Game/venv/game/score.dat', '.'), ('D:/New folder/Game/venv/Lib/site-packages/panda3d', 'panda3d/'), ('D:/New folder/Game/venv/Lib/site-packages/panda3d-1.10.9.dist-info', 'panda3d-1.10.9.dist-info/'), ('D:/New folder/Game/venv/Lib/site-packages/panda3d_tools', 'panda3d_tools/'), ('D:/New folder/Game/venv/Lib/site-packages/ursina', 'ursina/'), ('D:/New folder/Game/venv/Lib/site-packages/ursina-4.0.0-py3.9.egg-info', 'ursina-4.0.0-py3.9.egg-info/')],
              hiddenimports=[],

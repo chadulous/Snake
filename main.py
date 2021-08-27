@@ -69,12 +69,4 @@ field=Entity(model='quad', color=color.green, scale=(12,12), position=(field_siz
 apple=Entity(parent=field, model='sphere', color=color.red, scale=.05, position=(.1,.1,-.03), collider='box')
 player=Player(field)
 body=[]
-try:
-    import pyi_splash
-    for i in range(0,5):
-        pyi_splash.update_text(f'Loading Stuff, {i}s..')
-        wait(1)
-    pyi_splash.close()
-except:
-    print('running on .py, splash screen not allowed')
 app.run()

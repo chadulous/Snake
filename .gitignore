@@ -4,4 +4,5 @@ icon.ico
 publish.py
 build
 dist
+Snake.spec
 exportsettings.json

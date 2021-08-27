@@ -2,7 +2,6 @@ from ursina import *
 from time import sleep as wait
 from random import randint
 from sys import argv
-import os
 highscore = int(open('score.dat', 'r').read())
 class Player(Entity):
     def __init__(self, pfield):

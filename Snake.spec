@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['D:/New folder/Game/venv/game/main.py'],
-             pathex=['D:/New folder/Game/venv/Lib/site-packages', 'D:\\New folder\\Game\\venv\\game'],
+             pathex=['D:/New folder/Game/venv/Lib/site-packages', 'C:\\Users\\RedRa\\AppData\\Roaming\\Python\\Python39\\site-packages', 'D:\\New folder\\Game\\venv\\game'],
              binaries=[],
              datas=[('D:/New folder/Game/venv/game/score.dat', '.')],
              hiddenimports=['os'],

@@ -2,5 +2,5 @@ build.ps1
 splash.png
 icon.ico
 publish.py
-build/*
-dist/*
+build
+dist

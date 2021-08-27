@@ -30,7 +30,7 @@ class Player(Entity):
             self.eaten += 1
         if self.eaten >  highscore:
             highscore = self.eaten
-            open('score', 'w').write(f'{highscore}')
+            open('score.dat', 'w').write(f'{highscore}')
         for i in range(len(body)-1,0,-1):
             body[i].position = body[i-1].position
         if len(body)>0:

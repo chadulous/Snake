@@ -1,5 +1,5 @@
 ('D:\\New folder\\Game\\venv\\game\\build\\Snake\\Snake.exe',
- True,
+ False,
  True,
  True,
  'D:\\New folder\\Game\\venv\\game\\icon.ico',
@@ -63,8 +63,8 @@
  [],
  False,
  False,
- 1630046753,
- [('run_d.exe',
+ 1630047697,
+ [('runw_d.exe',
    'd:\\new '
-   'folder\\game\\venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run_d.exe',
+   'folder\\game\\venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\runw_d.exe',
    'EXECUTABLE')])

@@ -1,1 +1,0 @@
-('D:\\New folder\\Game\\venv\\game\\build\\Snake\\PYZ-00.pyz', [])

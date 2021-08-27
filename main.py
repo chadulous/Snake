@@ -4,9 +4,9 @@ from random import randint
 from sys import argv
 filetype = str(sys.argv[0]).split('.')[0]
 if filetype == 'py':
-    scorefile = 'srcscore'
+    scorefile = 'score.dat'
 elif filetype == 'exe':
-    scorefile = 'score\\score'
+    scorefile = 'score.dat\\score.dat'
 highscore = int(open('score', 'r').read())
 class Player(Entity):
     def __init__(self, pfield):
